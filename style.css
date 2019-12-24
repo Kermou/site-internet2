@@ -1,19 +1,33 @@
 html{
+    margin-top: 5vh;
+    /*height: 90vh;*/
     height: 100%;
     overflow: hidden;
-}
-body{
+    background: #EEF2F7;
+    margin: 2vw;
     color: #fff;
-    margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body{
     padding: 0;
     perspective: 1px;
     transform-style: preserve-3d;
-    height: 100%;
+    /*height: 100%;*/
+    height: 90%;
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: "Luna";
-    
+    background: white;
+    border-radius: 5px;    
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
 }
+
 
 header{
     box-sizing: border-box;
@@ -152,6 +166,7 @@ header h1 {
 
 header, header:before{
     background: 50% 50% / cover;
+    width: 100%;
     /*margin-top: -15%;*/
 }
 header::before{
