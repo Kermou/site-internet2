@@ -1,0 +1,631 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Luna";
+    
+}
+
+header{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+
+header h1 {
+ margin-top: -20%;
+ font-family: times, Times New Roman, times-roman, georgia, serif;
+ font-size: 51px;
+ line-height: 44px;
+ letter-spacing: -2px;
+ font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .imageuser {
+    margin-top: -12% !important;
+    width: 25vw !important;
+  }
+  header h1 {
+    margin-top: 20%;
+  }
+  .content-all { 
+    height: 1750px !important;
+  }
+  .content-all3 { 
+    height: 1768px !important;
+  }
+  .content-all3 { 
+    margin-top: 600px !important;
+  }
+  .content-all { 
+    margin-top: 762px !important;
+  }
+  .icon {
+  left: 40% !important;
+  }
+  .hearths {
+    height: 600px !important;
+  }
+  .c2 {
+    margin-top: 120% !important;
+    margin-left: 28% !important;
+  }
+  .c3 {
+    margin-top: 200% !important;
+    margin-left: 50% !important;
+  } 
+  .c4 {
+    margin-top: 265% !important;
+    margin-left: 8% !important;
+  }
+  .c5 {
+    margin-top: 350% !important;
+    margin-left: 50% !important;
+  }
+  .c1, .c2, .c3, .c4, .c5 {
+    padding: 10px 10px 10px 10px !important;
+  }
+  .miniature{
+    height: 20px !important;
+  }
+  .text{
+    font-size: 8px !important;
+  }
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .imageuser {
+    margin-top: -12% !important;
+    width: 25vw !important;
+  }
+  header h1 {
+    margin-top: -20%;
+  }
+  .content-all { 
+    height: 3130px !important;
+  }
+  .content-all3 { 
+    height: 3120px !important;
+  }
+  .content-all3 { 
+    margin-top: 510px !important;
+  }
+  .content-all { 
+    margin-top: 716px !important;
+  }
+  .icon {
+  left: 40% !important;
+  }
+  .hearths {
+    height: 600px !important;
+  }
+  .c2 {
+    margin-top: 120% !important;
+    margin-left: 28% !important;
+  }
+  .c3 {
+    margin-top: 200% !important;
+    margin-left: 50% !important;
+  } 
+  .c4 {
+    margin-top: 265% !important;
+    margin-left: 8% !important;
+  }
+  .c5 {
+    margin-top: 350% !important;
+    margin-left: 50% !important;
+  }
+  .c1, .c2, .c3, .c4, .c5 {
+    padding: 10px 10px 10px 10px !important;
+  }
+  .miniature{
+    height: 20px !important;
+  }
+  .text{
+    font-size: 8px !important;
+  }
+
+}
+
+
+.miniature{
+  height: 50px;
+}
+
+
+header, header:before{
+    background: 50% 50% / cover;
+    /*margin-top: -15%;*/
+}
+header::before{
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(images/noel5.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * { 
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.exm {
+  position: relative;
+  /*margin-top: 110px;*/
+  /*height: 500px;*/
+  width: 100%;
+  float: left;
+  text-align: center;
+  /*box-shadow: inset 1px 1px 12px #555;*/
+  background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.hearths {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background: #FF8008;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.imageuser {
+    border-radius: 80%;
+    /*margin-top: -100px;*/
+    margin-top: -8%;
+    /*height: 200px;*/
+    /*width: 200px;*/
+    width: 15vw;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 5px #777
+}
+
+
+
+
+
+h3 { 
+  --font: Catamaran;
+  --fm-capitalHeight: 0.68;
+  --fm-descender: 0.54;
+  --fm-ascender: 1.1;
+  --fm-linegap: 0;
+  font-family: var(--font);
+  color: #111; 
+  font-size: 40px; 
+}
+
+h4{ 
+  color: #111; 
+  font-family: 'Open Sans', 
+  sans-serif; font-size: 30px; 
+  font-weight: 300; 
+  line-height: 32px; 
+  margin: 0 0 50px; 
+}
+
+h5{ 
+  color: #111; 
+  font-family: 'Open Sans', 
+  sans-serif; font-size: 25px; 
+  font-weight: 200; 
+  line-height: 30px; 
+  margin: 0 0 50px; 
+}
+
+h6 { 
+  color: #111;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 150;
+  line-height: 25px;
+  margin: 80px 0 0 0;
+}
+
+
+.icon {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  transform: translate(-50%,-50%);
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.arrow {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  height: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  animation: arrow 700ms linear infinite;
+}
+
+.arrow::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  top: -12px;
+  right: -8px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.arrow::before {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  top: 12px;
+  right: -8px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
+}
+
+
+.wrap {
+  position: absolute;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.wrap2 {
+  position: relative;
+  display: inline-block;
+  float: left;
+
+
+  /*box-shadow: inset 1px 1px 12px #555;*/
+  background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /*height: 200px;*/
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.half, .articlename {
+    display:inline-block;
+    vertical-align:middle;
+}
+.half {
+    width: 50px;
+}
+
+
+
+.articlename {
+  transform-style: inherit;
+  color:#fff;
+      margin-left: 10px;
+    margin-right: 10px;
+ font-family: times, Times New Roman, times-roman, georgia, serif;
+ font-size: 30px;
+ line-height: 44px;
+ letter-spacing: -2px;
+ font-weight: bold;
+}
+
+
+.content-all { 
+  margin-top: 692px;
+  /*margin:0;*/
+  padding:0;
+  height: 5050px;
+  /* background: url(images/background2.png) no-repeat center fixed; */
+  /* background: url(images/background3.png) center; */
+  /*background: url(images/all_decors.png) center fixed; */
+  /*background: url(images/noel1.jpg) center fixed;*/
+  background: url(images/original.gif) center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+.exm2 {
+  position: relative;
+  /*height: 300px;*/
+  width: 100%;
+  float: left;
+  text-align: center;
+    /*box-shadow: inset 1px 1px 12px #555;*/
+background: #24C6DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.exm3 {
+  position: relative;
+  /*height: 300px;*/
+  width: 100%;
+  float: left;
+  text-align: center;
+    /*box-shadow: inset 1px 1px 12px #555;*/
+  background: #FF8008;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.exm2 h3, .exm3 h3 { 
+  --font: Catamaran;
+  --fm-capitalHeight: 0.68;
+  --fm-descender: 0.54;
+  --fm-ascender: 1.1;
+  --fm-linegap: 0;
+  font-family: var(--font);
+  color: white; 
+  font-size: 40px; 
+}
+
+.exm2 h4, .exm3 h4 { 
+  color: white; 
+  font-family: 'Open Sans', 
+  sans-serif; font-size: 30px; 
+  font-weight: 300; 
+  line-height: 32px; 
+  margin: 0 0 50px; 
+}
+
+.exm2 h5 { 
+  color: white; 
+  font-family: 'Open Sans', 
+  sans-serif; font-size: 30px; 
+  font-weight: 300; 
+  line-height: 32px; 
+  margin: 0 0 50px; 
+}
+
+
+.wrap3 {
+  position: relative;
+  display: inline-block;
+  float: left;
+
+  /*box-shadow: inset 1px 1px 12px #555;*/
+background: #24C6DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+.content-all2 { 
+  margin-top: 500px;
+  /*margin:0;*/
+  padding:0;
+  height: 5050px;
+  /* background: url(images/background2.png) no-repeat center fixed; */
+  /* background: url(images/background3.png) center; */
+  /*background: url(images/all_decors.png) center fixed; */
+  /*background: url(images/noel1.jpg) center fixed;*/
+  background: url(images/original.gif) center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+
+.content-all3 { 
+  /*margin:0;*/
+  margin-top: 500px;
+  padding:0;
+  /*height: 5050px;*/
+  height: 5070px;
+  /* background: url(images/background2.png) no-repeat center fixed; */
+  /* background: url(images/background3.png) center; */
+  /*background: url(images/all_decors.png) center fixed; */
+  /*background: url(images/noel1.jpg) center fixed;*/
+  background: url(images/original3.gif) center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  z-index: 0;
+}
+
+
+.ContainerVideo {
+    /*width: 100%;
+    height: 100%;*/
+    position: relative;
+    /*overflow: hidden;*/
+    z-index: 1;
+
+}
+
+.ContainerVideo video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* The following will size the video to fit the full container. Not necessary, just nice.*/
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    -moz-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    -o-transform:scale(0.6);
+    -ms-transform:scale(0.6);
+     transform:scale(0.6);
+}
+
+
+.scroll {
+    position: absolute;
+    margin-left: 10%;
+}
+
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+  position: absolute;
+  width: 35%;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  /*box-shadow: 12px 12px 2px 1px rgba(1, 142, 142, .2);*/
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.c1 {
+  margin-top: 45%;
+  margin-left: 8%;
+}
+
+.c2 {
+  margin-top: 110%;
+  margin-left: 28%;
+}
+
+.c3 {
+  margin-top: 180%;
+  margin-left: 50%;
+}
+
+.c4 {
+  margin-top: 235%;
+  margin-left: 8%;
+}
+
+.c5 {
+  margin-top: 320%;
+  margin-left: 40%;
+}
+
+.c6 {
+  margin-top: 550px;
+  margin-left: 350px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #24C6DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container:hover .overlay2 {
+  opacity: 1;
+}
+
+.text {
+
+--font: Catamaran;
+--fm-capitalHeight: 0.68;
+--fm-descender: 0.54;
+--fm-ascender: 1.1;
+--fm-linegap: 0;
+
+
+/* apply font-family */
+font-family: var(--font);
+
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
